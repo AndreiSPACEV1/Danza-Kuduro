@@ -1,0 +1,489 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Danza Kuduro Lyrics</title>
+    <link rel="icon" type="image/x-icon" href="Icon.ico">
+
+    <style>@import url('https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400..700&display=swap');
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+            color: #fff;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            text-align: center;
+            padding: 20px;
+            position: relative;
+            overflow: hidden;
+            background-image: url(peakpx.jpg);
+            background-size: cover;
+        }
+        video {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transform: translate(-50%, -50%);
+            z-index: -1;
+
+        }
+        html, body {
+  margin: 0;
+  padding: 0;
+}
+body {
+  
+  overflow-x: hidden; 
+}
+
+/* ---------- Fog ---------- */
+.fogwrapper {
+  height: 100%;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  -webkit-filter: blur(1px) grayscale(0.2) saturate(1.2) sepia(0.2);
+  filter: blur(1px) grayscale(0.2) saturate(1.2) sepia(0.2);
+}
+#foglayer_01, #foglayer_02, #foglayer_03 {
+  height: 100%;
+  position: absolute;
+  width: 200%;
+}
+#foglayer_01 .image01, #foglayer_01 .image02,
+#foglayer_02 .image01, #foglayer_02 .image02,
+#foglayer_03 .image01, #foglayer_03 .image02 {
+  float: left;
+  height: 100%;
+  width: 50%;
+}
+#foglayer_01 {
+  -webkit-animation: foglayer_01_opacity 10s linear infinite, foglayer_moveme 15s linear infinite;
+  -moz-animation: foglayer_01_opacity 10s linear infinite, foglayer_moveme 15s linear infinite;
+  animation: foglayer_01_opacity 10s linear infinite, foglayer_moveme 15s linear infinite;
+}
+#foglayer_02, #foglayer_03 {
+  -webkit-animation: foglayer_02_opacity 21s linear infinite, foglayer_moveme 13s linear infinite;
+  -moz-animation: foglayer_02_opacity 21s linear infinite, foglayer_moveme 13s linear infinite;
+  animation: foglayer_02_opacity 21s linear infinite, foglayer_moveme 13s linear infinite;
+}
+
+/* ---------- Moving Fog ---------- */
+/*
+  'size: cover' || 'size: 100%'; results remain the same
+  'attachment: scroll' can be added or removed; results remain the same
+  'attachment: fixed' causing unexpected results in Chrome
+  'repeat-x' || 'no-repeat'; results remain the same
+*/ 
+#foglayer_01 .image01, #foglayer_01 .image02 {
+  background: url("https://raw.githubusercontent.com/danielstuart14/CSS_FOG_ANIMATION/master/fog1.png") center center/cover no-repeat transparent;
+  
+}
+#foglayer_02 .image01, #foglayer_02 .image02,
+#foglayer_03 .image01, #foglayer_03 .image02{
+  background: url("https://raw.githubusercontent.com/danielstuart14/CSS_FOG_ANIMATION/master/fog2.png") center center/cover no-repeat transparent;
+}
+
+/* ---------- Keyframe Layer 1 ---------- */
+@-webkit-keyframes foglayer_01_opacity {
+  0% { opacity: .1; }
+  22% { opacity: .5; }
+  40% { opacity: .28; }
+  58% { opacity: .4; }
+  80% { opacity: .16; }
+  100% { opacity: .1; }
+}
+@-moz-keyframes foglayer_01_opacity {
+  0% { opacity: .1; }
+  22% { opacity: .5; }
+  40% { opacity: .28; }
+  58% { opacity: .4; }
+  80% { opacity: .16; }
+  100% { opacity: .1; }
+}
+@-o-keyframes foglayer_01_opacity {
+  0% { opacity: .1; }
+  22% { opacity: .5; }
+  40% { opacity: .28; }
+  58% { opacity: .4; }
+  80% { opacity: .16; }
+  100% { opacity: .1; }
+}
+@keyframes foglayer_01_opacity {
+  0% { opacity: .1; }
+  22% { opacity: .5; }
+  40% { opacity: .28; }
+  58% { opacity: .4; }
+  80% { opacity: .16; }
+  100% { opacity: .1; }
+}
+/* ---------- Keyframe Layer 2 ---------- */
+@-webkit-keyframes foglayer_02_opacity {
+  0% { opacity: .5; }
+  25% { opacity: .2; }
+  50% { opacity: .1; }
+  80% { opacity: .3; }
+  100% { opacity: .5; }
+}
+@-moz-keyframes foglayer_02_opacity {
+  0% { opacity: .5; }
+  25% { opacity: .2; }
+  50% { opacity: .1; }
+  80% { opacity: .3; }
+  100% { opacity: .5; }
+}
+@-o-keyframes foglayer_02_opacity {
+  0% { opacity: .5; }
+  25% { opacity: .2; }
+  50% { opacity: .1; }
+  80% { opacity: .3; }
+  100% { opacity: .5; }
+}
+@keyframes foglayer_02_opacity {
+  0% { opacity: .5; }
+  25% { opacity: .2; }
+  50% { opacity: .1; }
+  80% { opacity: .3; }
+  100% { opacity: .5; }
+}
+/* ---------- Keyframe Layer 3 ---------- */
+@-webkit-keyframes foglayer_03_opacity {
+  0% { opacity: .8 }
+  27% { opacity: .2; }
+  52% { opacity: .6; }
+  68% { opacity: .3; }
+  100% { opacity: .8; }
+}
+@-moz-keyframes foglayer_03_opacity {
+  0% { opacity: .8 }
+  27% { opacity: .2; }
+  52% { opacity: .6; }
+  68% { opacity: .3; }
+  100% { opacity: .8; }
+}
+@-o-keyframes foglayer_03_opacity {
+  0% { opacity: .8 }
+  27% { opacity: .2; }
+  52% { opacity: .6; }
+  68% { opacity: .3; }
+  100% { opacity: .8; }
+}
+@keyframes foglayer_03_opacity {
+  0% { opacity: .8; }
+  27% { opacity: .2; }
+  52% { opacity: .6; }
+  68% { opacity: .3; }
+  100% { opacity: .8; }
+}
+/* ---------- Keyframe moveMe ---------- */
+@-webkit-keyframes foglayer_moveme {
+  0% { left: 0; }
+  100% { left: -100%; }
+}
+@-moz-keyframes foglayer_moveme {
+  0% { left: 0; }
+  100% { left: -100%; }
+}
+@-o-keyframes foglayer_moveme {
+  0% { left: 0; }
+  100% { left: -100%; }
+}
+@keyframes foglayer_moveme {
+  0% { left: 0; }
+  100% { left: -100%; }
+}
+
+/* ---------- Keyframe moveMe ---------- */
+@-webkit-keyframes foglayer_moveme {
+  0% { left: 0; }
+  100% { left: -100%; }
+}
+@-moz-keyframes foglayer_moveme {
+  0% { left: 0; }
+  100% { left: -100%; }
+}
+@-o-keyframes foglayer_moveme {
+  0% { left: 0; }
+  100% { left: -100%; }
+}
+@keyframes foglayer_moveme {
+  0% { left: 0; }
+  100% { left: -100%; }
+}
+
+@media only screen
+  and (min-width: 280px)
+  and (max-width: 767px) {
+    #foglayer_01 .image01, #foglayer_01 .image02,
+    #foglayer_02 .image01, #foglayer_02 .image02,
+    #foglayer_03 .image01, #foglayer_03 .image02 {
+      width: 100%;
+    }
+  }
+        .lyrics {
+            background-color: rgba(0, 0, 0, 0.5);
+        border-radius: 10px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+        padding: 20px;
+        max-width: 600px;
+        font-size: 30px;
+        margin: auto;
+        z-index: 1;
+        max-height: 500px; /* Setează înălțimea maximă */
+        overflow-y: auto; /* Adaugă bara de derulare verticală */
+        }
+        .lyrics::-webkit-scrollbar {
+    width: 10px; /* Lățimea barei de derulare */
+}
+
+/* Stilurile pentru butonul de derulare */
+.lyrics::-webkit-scrollbar-thumb {
+    background-color: rgba(255, 255, 255, 0.719); /* Culoarea butonului de derulare cu transparență */
+    border-radius: 5px; /* Rotunjirea colțurilor butonului de derulare */
+}
+
+/* Stilurile pentru bara de derulare */
+.lyrics::-webkit-scrollbar-track {
+    background-color: rgba(192, 192, 192, 0.5); /* Culoarea fundalului barei de derulare cu transparență */
+}
+        .line {
+            display: none;
+        }
+
+.Buton_muzica{
+    z-index: 2;
+    height:300px;
+  width:300px;
+  text-shadow: #000000 2px 2px;
+  border-radius:300px;
+  border: 0px;
+
+  box-shadow: 0px 0px 40px #ffffff;
+  font-family:"Pixelify Sans", sans-serif;
+  font-size: 70px;
+  transition:All 0.5s ease;
+  color: #ffffff;
+  font-weight:bold;
+
+  background:#cccccc3f; 
+  
+  
+  
+  background: linear-gradient(124deg, #ff22009f, #e81d1d9f, #e8b71d9f, #e3e81d9f, #1de8409f, #1ddde89f, #2b1de89f, #dd00f39f, #dd00f39f);
+background-size: 1800% 1800%;
+
+-webkit-animation: rainbow 18s ease infinite;
+-z-animation: rainbow 18s ease infinite;
+-o-animation: rainbow 18s ease infinite;
+  animation: rainbow 18s ease infinite;
+}
+@-webkit-keyframes rainbow {
+    0%{background-position:0% 82%}
+    50%{background-position:100% 19%}
+    100%{background-position:0% 82%}
+}
+@-moz-keyframes rainbow {
+    0%{background-position:0% 82%}
+    50%{background-position:100% 19%}
+    100%{background-position:0% 82%}
+}
+@-o-keyframes rainbow {
+    0%{background-position:0% 82%}
+    50%{background-position:100% 19%}
+    100%{background-position:0% 82%}
+}
+@keyframes rainbow { 
+    0%{background-position:0% 82%}
+    50%{background-position:100% 19%}
+    100%{background-position:0% 82%}
+}
+
+.Buton_muzica:hover{
+  transition:All 1s ease;
+  -moz-box-shadow: 0px 0px 400px 8000px #ffffff9f;
+  -webkit-box-shadow: 0px 0px 400px 8000px #0000009f;
+  box-shadow: 0px 0px 400px 8000px #0000009f;
+  opacity: 1;
+}
+
+.button:active{
+  transition:All 0.2s ease;
+  -moz-box-shadow: 0px 0px 40px #666666;
+  -webkit-box-shadow: 0px 0px 40px #666666;
+  box-shadow: 0px 0px 40px #666666;
+
+}
+
+h1 {
+  text-align: center;
+  margin-top: 4em;
+}
+
+.vignette {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  box-shadow: 2px 2px 200px 100px rgba(0,0,0,20) inset;
+}
+
+    </style>
+</head>
+<body>
+   
+    <div class="vignette"></div>
+    <audio id="audio" src="Danza Kuduro.mp3" loop="loop"  autoplay >
+        <source  src="Danza Kuduro.mp3" type="audio/mpeg"> 
+        Browserul tău nu suportă elementul audio.
+    </audio>
+
+
+    <video autoplay id="videoul" muted loop >
+        <source src="Danza Kuduro.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
+
+    <div id="foglayer_01" class="fog">
+        <div class="image01"></div>
+        <div class="image02"></div>
+      </div>
+      <div id="foglayer_02" class="fog">
+        <div class="image01"></div>
+        <div class="image02"></div>
+      </div>
+      <div id="foglayer_03" class="fog">
+        <div class="image01"></div>
+        <div class="image02"></div>
+      </div>
+   
+      <button onclick="playAudio()" class="Buton_muzica" id="Buton_muzica">¡Danza Kuduro!</button>
+
+    
+    <div class="lyrics" id="lyrics" >
+        <p class="line">A&X</p>
+        <p class="line">El Orfanato</p>
+        <p class="line">¡Danza Kuduro!</p>
+        <p class="line">¡Plop, plop, plop, plop, plop, plop, plop!</p>
+        <p class="line">¡Lucenzo! (El Orfanato)</p>
+        <p class="line">¡El Rey!</p>
+        <p class="line">La mano arriba</p>
+        <p class="line">Cintura sola</p>
+        <p class="line">Da media vuelta</p>
+        <p class="line">Danza Kuduro</p>
+        <p class="line">No te canse′ ahora</p>
+        <p class="line">Que esto solo empieza</p>
+        <p class="line">Mueve la cabeza</p>
+        <p class="line">Danza Kuduro</p>
+        <p class="line">La mano arriba</p>
+        <p class="line">Cintura sola</p>
+        <p class="line">Da media vuelta</p>
+        <p class="line">Danza Kuduro</p>
+        <p class="line">No te canse' ahora</p>
+        <p class="line">Que esto solo empieza</p>
+        <p class="line">Mueve la cabeza</p>
+        <p class="line">Danza Kuduro</p>
+        <p class="line">¿Quién puede domar la fuerza del mal que se mete por tus venas? (¡Don!)</p>
+        <p class="line">Lo caliente del sol que se te metió y no te deja quieta, nena (¡toma, toma!)</p>
+        <p class="line">¿Quién puede parar eso que, al bailar, descontrola tus caderas? (sexy)</p>
+        <p class="line">Y ese fuego que quema por dentro y lento te convierte en fiera (¡ajá!)</p>
+        <p class="line">Con la mano arriba</p>
+        <p class="line">Cintura sola</p>
+        <p class="line">Da media vuelta</p>
+        <p class="line">Y sacude duro</p>
+        <p class="line">No te quite′ ahora</p>
+        <p class="line">Que esto solo empieza</p>
+        <p class="line">Mueve la cabeza</p>
+        <p class="line">Y sacude duro (mexe kuduro)</p>
+        <p class="line">Balançar que é uma loucura, morena, vem a meu lado</p>
+        <p class="line">Ninguém vai ficar parado, quero ver mexer kuduro</p>
+        <p class="line">Balançar que é uma loucura, morena, vem a meu lado</p>
+        <p class="line">Ninguém vai ficar parado, oh-oh</p>
+        <p class="line">Oi, oi, oi</p>
+        <p class="line">Oi-oi, oi, oi</p>
+        <p class="line">É para quebrar kuduro, vamos dançar kuduro</p>
+        <p class="line">Oi, oi, oi</p>
+        <p class="line">Oi-oi, oi, oi</p>
+        <p class="line">Seja morena ou loira, vem balançar kuduro</p>
+        <p class="line">Oi, oi, oi</p>
+        <p class="line">La mano arriba</p>
+        <p class="line">Cintura sola</p>
+        <p class="line">Da media vuelta</p>
+        <p class="line">Danza Kuduro</p>
+        <p class="line">No te canse' ahora</p>
+        <p class="line">Que esto solo empieza</p>
+        <p class="line">Mueve la cabeza</p>
+        <p class="line">Danza Kuduro</p>
+        <p class="line">La mano arriba</p>
+        <p class="line">Cintura sola</p>
+        <p class="line">Da media vuelta</p>
+        <p class="line">Danza Kuduro</p>
+        <p class="line">No te canse' ahora</p>
+        <p class="line">Que esto solo empieza</p>
+        <p class="line">Mueve la cabeza</p>
+        <p class="line">Danza Kuduro</p>
+        <p class="line">Balançar que é uma loucura, morena, vem a meu lado</p>
+        <p class="line">Ninguém vai ficar parado, quero ver mexer kuduro</p>
+        <p class="line">Balançar que é uma loucura, morena, vem a meu lado</p>
+        <p class="line">Ninguém vai ficar parado, oh-oh</p>
+        <p class="line">Oi, oi, oi</p>
+        <p class="line">Oi-oi, oi, oi</p>
+        <p class="line">É para quebrar kuduro, vamos dançar kuduro</p>
+        <p class="line">Oi, oi, oi</p>
+        <p class="line">Oi-oi, oi, oi</p>
+        <p class="line">Seja morena ou loira, vem balançar kuduro</p>
+        <p class="line">Oi, oi, oi (¡El Orfanato!)</p>
+        <p class="line">La mano arriba</p>
+        <p class="line">Cintura sola</p>
+        <p class="line">Da media vuelta</p>
+        <p class="line">Danza Kuduro</p>
+        <p class="line">No te canse′ ahora</p>
+        <p class="line">Que esto solo empieza</p>
+        <p class="line">Mueve la cabeza</p>
+        <p class="line">Danza Kuduro</p>
+        <p class="line">La mano arriba</p>
+        <p class="line">Cintura sola</p>
+        <p class="line">Da media vuelta</p>
+        <p class="line">Danza Kuduro</p>
+        <p class="line">No te canse′ ahora</p>
+        <p class="line">Que esto solo empieza</p>
+        <p class="line">Mueve la cabeza</p>
+        <p class="line">Danza Kuduro</p>
+    </div>
+    <script>
+        var bool = false;
+ window.onload = function() {
+            var video = document.getElementById("videoul");
+            var lyrics = document.getElementById("lyrics");
+            video.style.display= 'none';
+            lyrics.style.display = 'none';
+
+        }
+
+        function playAudio() {
+            bool = true;
+            var audio = document.getElementById("audio");
+            var video = document.getElementById("videoul");
+            var lyrics = document.getElementById("lyrics");
+            video.style.display= 'block';
+            lyrics.style.display = 'block';
+            document.getElementById("Buton_muzica").style.display = 'none';
+            audio.play();
+            const lines = document.querySelectorAll('.line');
+            lines.forEach((line, index) => {
+                setTimeout(() => {
+                    line.style.display = 'block';
+                }, 2000 * index);
+            });
+        }
+    </script>
+</body>
+</html>
